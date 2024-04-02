@@ -19,6 +19,7 @@ impl Render for HelloWorld {
 }
  
 fn main() {
+    env_logger::init();
     App::new().run(|cx: &mut AppContext| {
         cx.open_window(WindowOptions::default(), |cx| {
             cx.new_view(|_cx| HelloWorld {
