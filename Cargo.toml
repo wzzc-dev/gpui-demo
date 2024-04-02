@@ -1,0 +1,12 @@
+[package]
+name = "gpui-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+
+
+[target.'cfg(target_os = "windows")'.build-dependencies]
+embed-manifest = "1.4.0"
+winresource = "0.1"
